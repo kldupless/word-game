@@ -11,7 +11,7 @@ const getRandomWords = () => {
     url: 'https://twinword-word-association-quiz.p.rapidapi.com/type1/',
     params: {level: chosenLevel, area: 'sat'},
     headers: {
-      'X-RapidAPI-Key': '0487984adfmshd79c56463345050p1660e8jsncef8d47bf3d5',
+      'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
       'X-RapidAPI-Host': 'twinword-word-association-quiz.p.rapidapi.com'
     }
   }
